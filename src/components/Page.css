@@ -1,11 +1,11 @@
-/*
- * TODO: On narrow screens the background shouldn't scroll when detail overlay is shown
- */
-
 .page {
     margin: 1rem;
     background: linear-gradient(var(--white) 45%, var(--light-grey));
 }
+
+.page--scroll {
+    overflow: hidden;
+  }
 
 .page__header {
     margin-bottom: 1rem;
@@ -45,4 +45,10 @@
 }
 .page__next-day::after {
     content: '▶︎';
+}
+
+@media (min-width: 50rem) {
+    .page--scroll {
+        overflow: auto;
+    }
 }

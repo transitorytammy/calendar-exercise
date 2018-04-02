@@ -38,10 +38,12 @@ export default class Page extends PureComponent {
     }
 
     _handleSelectEvent(selectedEventId) {
+        document.body.classList.add('page--scroll');
         this.setState({selectedEventId});
     }
 
     _handleEventDetailOverlayClose() {
+        document.body.classList.remove('page--scroll');
         this.setState({selectedEventId: undefined});
     }
 
