@@ -1,3 +1,9 @@
+:root {
+  --white: #FFF;
+  --light-grey: #E5E4E4;
+  --picton-blue: #51B1E0;
+}
+
 .bg--sky {
   background-color: #d1e8f0;
   border-color: #307992;
@@ -14,7 +20,6 @@
   background-color: #009e60;
   border-color: #003800;
 }
-
 
 .round-corner {
   border-radius: 10px;
