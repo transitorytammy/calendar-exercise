@@ -10,7 +10,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 100%;
+    width: 100%;
 }
 .time-slot-event::-moz-focus-inner {
   border: 0;
