@@ -66,10 +66,4 @@
     width: 1rem;
     vertical-align: sub;
     margin-left: 0.5rem;
-
-    /*
-     * TODO: Figure out how label color can match the event color instead of
-     * always being black
-     */
-    background-color: #000;
 }

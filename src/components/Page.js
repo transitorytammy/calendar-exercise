@@ -6,23 +6,22 @@ import DATA_SET from '../utils/data';
 
 import './Page.css';
 
-const DayNavigator = ({dateDisplay, onPrev, onNext}) => {
-    return (
-        <nav className="page__nav">
-            <button
-                className="page__nav-button page__prev-day"
-                title="Go to previous day"
-                onClick={onPrev}
-            />
-            <h2 className="page__date">{dateDisplay}</h2>
-            <button
-                className="page__nav-button page__next-day"
-                title="Go to next day"
-                onClick={onNext}
-            />
-        </nav>
-    );
-};
+const DayNavigator = ({dateDisplay, onPrev, onNext}) => (
+    <nav className="page__nav">
+        <button
+            className="page__nav-button page__prev-day"
+            title="Go to previous day"
+            onClick={onPrev}
+        />
+        <h2 className="page__date">{dateDisplay}</h2>
+        <button
+            className="page__nav-button page__next-day"
+            title="Go to next day"
+            onClick={onNext}
+        />
+    </nav>
+);
+
 
 export default class Page extends PureComponent {
     state = {
@@ -87,7 +86,7 @@ export default class Page extends PureComponent {
         }
 
         return (
-            <div className="page" onKeyDown={(e) => this._escClose(e)}>
+            <div role="presentation" className="page" onKeyDown={this._escClose.bind(this)}>
                 <header className="page__header">
                     <h1 className="page__title">Daily Agenda</h1>
                 </header>
