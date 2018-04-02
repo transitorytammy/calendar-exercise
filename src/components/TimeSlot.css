@@ -10,13 +10,13 @@
 }
 
 .time-slot:not(:last-child) {
-  border-bottom: 1px solid var(--border-grey);
+  border-bottom: 1px solid var(--dove-grey);
 }
 
 .time-slot__hour-label {
     width: 4rem;
     text-align: right;
-    border-right: 1px solid var(--border-grey);
+    border-right: 1px solid var(--dove-grey);
     padding: 0.5rem;
 
     display: flex;

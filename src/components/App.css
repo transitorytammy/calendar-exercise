@@ -1,8 +1,9 @@
 :root {
   --white: #FFF;
   --light-grey: #E5E4E4;
-  --border-grey: #666;
+  --dove-grey: #666;
   --picton-blue: #51B1E0;
+  --black: #000;
 }
 
 .bg--sky {
