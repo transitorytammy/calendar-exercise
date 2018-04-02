@@ -1,5 +1,4 @@
 /*
- * TODO: Time slot events should have rounded corners
  * TODO: Past events should display faded-out
  */
 .time-slot-event {
@@ -22,20 +21,4 @@
     outline: 0;
     box-shadow: 0 0 0.25rem 0 #51b1e0;
     border-color: #000;
-}
-.time-slot-event--sky {
-    background-color: #d1e8f0;
-    border-color: #307992;
-}
-.time-slot-event--canary {
-    background-color: #fcf69a;
-    border-color: #938a04;
-}
-.time-slot-event--rose {
-    background-color: #fcbbd2;
-    border-color: #b00843;
-}
-.time-slot-event--shamrock {
-    background-color: #009e60;
-    border-color: #003800;
 }

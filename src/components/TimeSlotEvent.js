@@ -19,7 +19,7 @@ export default class TimeSlotEvent extends PureComponent {
         // can be displayed faded-out
 
         return (
-            <button className={`time-slot-event time-slot-event--${color} round-corner`} onClick={onSelect}>
+            <button className={`time-slot-event bg--${color} round-corner`} onClick={onSelect}>
                 {title}
             </button>
         );
