@@ -1,10 +1,12 @@
 import React, {PureComponent} from 'react';
+import { CSSTransitionGroup } from 'react-transition-group';
 import Calendar from './Calendar';
 import EventDetailOverlay from './EventDetailOverlay';
 import {filterEventsByDay, getEventFromEvents, getDisplayDate} from '../utils';
 import DATA_SET from '../utils/data';
 
 import './Page.css';
+import './Animations.css';
 
 const DayNavigator = ({dateDisplay, onPrev, onNext}) => (
     <nav className="page__nav">
@@ -96,7 +98,12 @@ export default class Page extends PureComponent {
                     onNext={this._handleNext.bind(this)}
                 />
                 <Calendar events={filteredEvents} onSelectEvent={this._handleSelectEvent.bind(this)} />
-                {eventDetailOverlay}
+                <CSSTransitionGroup
+                    transitionName="event-detail-overlay-transition"
+                    transitionEnterTimeout={500}
+                    transitionLeaveTimeout={300}>
+                    {eventDetailOverlay}
+                </CSSTransitionGroup>
             </div>
         );
     }
