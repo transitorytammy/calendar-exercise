@@ -37,6 +37,14 @@ export default class Page extends PureComponent {
         selectedEventId: undefined
     }
 
+    _escClose(e) {
+        let eventDetailShowing = document.getElementsByClassName('event-detail-overlay').length;
+
+        if (e.keyCode === 27 && eventDetailShowing) {
+            this._handleEventDetailOverlayClose();
+        }
+    }
+
     _handleSelectEvent(selectedEventId) {
         document.body.classList.add('page--scroll');
         this.setState({selectedEventId});
@@ -79,7 +87,7 @@ export default class Page extends PureComponent {
         }
 
         return (
-            <div className="page">
+            <div className="page" onKeyDown={(e) => this._escClose(e)}>
                 <header className="page__header">
                     <h1 className="page__title">Daily Agenda</h1>
                 </header>
