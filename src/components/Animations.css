@@ -1,0 +1,17 @@
+.event-detail-overlay-transition-enter {
+    opacity: 0.01;
+}
+
+.event-detail-overlay-transition-enter.event-detail-overlay-transition-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
+.event-detail-overlay-transition-leave {
+    opacity: 1;
+}
+
+.event-detail-overlay-transition-leave.event-detail-overlay-transition-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}

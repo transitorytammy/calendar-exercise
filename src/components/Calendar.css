@@ -1,6 +1,3 @@
-/*
- * TODO: Calendar should have rounded corners
- */
 .calendar {
-    border: 1px solid #666;
+    border: 1px solid var(--dove-grey);
 }

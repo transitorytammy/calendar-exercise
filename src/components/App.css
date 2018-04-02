@@ -1,0 +1,28 @@
+:root {
+  --white: #FFF;
+  --light-grey: #E5E4E4;
+  --dove-grey: #666;
+  --picton-blue: #51B1E0;
+  --black: #000;
+}
+
+.bg--sky {
+  background-color: #d1e8f0;
+  border-color: #307992;
+}
+.bg--canary {
+  background-color: #fcf69a;
+  border-color: #938a04;
+}
+.bg--rose {
+  background-color: #fcbbd2;
+  border-color: #b00843;
+}
+.bg--shamrock {
+  background-color: #009e60;
+  border-color: #003800;
+}
+
+.round-corner {
+  border-radius: 10px;
+}
